@@ -63,7 +63,7 @@ echo "[+] Copying Suricata logs..."
 # Copy logs
 sudo cp /var/log/suricata/eve.json $LOG_DIR/
 sudo cp /var/log/suricata/fast.log $LOG_DIR/
-sudo chown -R siage:siage $LOG_DIR
+sudo chown -R <>:<> $LOG_DIR
 
 echo "[+] Logs saved to: $LOG_DIR"
 echo -e "\n[!] You can now:"
