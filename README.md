@@ -22,12 +22,14 @@ cps-modbus-lab/
 
 ## Purdue Model
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Purdue%20Model.png)
-
 ## Network Diagram
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Network%20Diagram.png)
 
+
 ## Modbus Lab Incident Report
 ![](https://github.com/cjhosea/)
+![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/capture_led_on_pcap.png)
+![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/ModbusReplayAttackLog.jpg)
 
 ## OT Incident Triage Report
 ![](https://github.com/cjhosea/)
