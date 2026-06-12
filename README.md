@@ -25,7 +25,7 @@ T1692.001 of the MITRE ATT&CK for ICS framework represents "Unauthorized Message
 ## Purdue Model
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Purdue%20Model.png)
 
-The Purdue Model is the most popular framework for understanding and securing OT environments. 
+The Purdue Model is the most popular framework for understanding and securing OT environments. <br\>
 Level 4 (Corporate/Enterprise) is the highest layer and represents business and IT infrastructure. This level is where most initial compromise happens, usually phising or malware. 
 Level 3.5 (DMZ) is the secure buffer IT and OT. This level include assets which requires access to both corporate and OT. The OT and IT networks should never be allowed to communicate directly between each other, so it is imperative that we have a controlled data exhcange point to allow for OT data to reach our IT network. This level is implemented with two firewalls from two different vendors to ensure robust security and to allow us to not double-down on any vulnerabilites from one specific vendor. 
 Layer 3 (Site-Wide Supervisory) is for assets that need access to mulitple plants, but not access to our corporate network. This includes domain services, as we should have separate Active Directories (for example) for both IT and OT. Windows systems are also common here, along with SysLog servers.
