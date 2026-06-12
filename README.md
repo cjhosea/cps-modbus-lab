@@ -1,7 +1,7 @@
 
 # CPS Modbus Lab
 
-This lab is an example of the type of incidents that can occur in an ICS/OT environment. Critical infrastructure, such as those found in water plants and electrical grids, are vital to the safety and well-being of our modern societies.
+This lab is an example of the type of incidents that can occur in an ICS/OT environment. Critical infrastructure, such as those found in water plants and electrical grids, are vital to the safety and well-being of our modern societies. The most important things in any OT environment are availability and safety, and any disruption can cause catastrophic effects to those in or around the site, as well as the environment. 
 
 
 ## Repository Layout
