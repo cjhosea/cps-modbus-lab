@@ -26,6 +26,8 @@ cps-modbus-lab/
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Network%20Diagram.png)
 
 ## OT Incident Triage Report
+![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/ModbusReplayAttackLog.jpg)
+![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/capture_led_on_pcap.png)
 | Alert | Modbus Replay Attack |
 | :---- | :---- |
 | **Source** | 192.168.86.46 |
@@ -40,7 +42,6 @@ cps-modbus-lab/
 
 
 ## Modbus Lab Incident Report
-![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/ModbusReplayAttackLog.jpg)
 
 **What Happened and When?**
 
@@ -64,9 +65,6 @@ cps-modbus-lab/
 | Eradication: What steps need to be taken to eliminate adversarial presence from the affected environment, protect the affected data, or minimize the risks to the affected parties? | Reset all passwords in the environment and verify all ACL and firewall configurations. If necessary (e.g. rootkit), rebuild with new hardware. |
 | Recovery: How can we restore normal business operations or normal activities? | Ensure safety and control systems are operating as expected. When ready, bring interdependent systems back up properly.  |
 
-
-
-![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/capture_led_on_pcap.png)
 
 
 
