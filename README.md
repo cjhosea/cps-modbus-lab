@@ -52,7 +52,12 @@ Level 0 (Process Instrumentation) is the foundational layer where physical equip
 | **Recommended Response** | Ask the operator or engineer to verify the state of the affected device. Once deemed safe to do, block traffic from source to destination, while preserving PCAPs and investigating source device. |
 | **Escalation Path** | OT Analyst \-\> Senior OT Analyst \-\> OT Security Manager \-\> Control Systems Engineer \-\> CISO / Plant Manager |
 
-Modbus is the most widely used fieldbus protocol. It allows field devices to communicate with controllers and works via a request/reponse communication method. The function code decides what action the slave/outstation should take. Function code 05 (write single coil), in this case, writes a single bit to the output (coil). This is essentially just a singular ON or OFF switch. In an OT environment, this could represent the shutting or opening of a valve or pump. 
+<p>Modbus is the most widely used fieldbus protocol. It allows field devices to communicate with controllers and works via a request/reponse communication method. The function code decides what action the slave/outstation should take. Function code 05 (write single coil), in this case, writes a single bit to the output (coil). This is essentially just a singular ON or OFF switch. In an OT environment, this could represent the shutting or opening of a valve or pump. Modbus allows for communication over TCP, with port 502 being the default. </br>
+
+If an adversary was able to send unauthorized ON/OFF commands, they could potentially send false data or instructions to pumping stations, similar to that of the Maroochy Water Breach in 2000. This incident allowed an attacker to release almost a million liters of raw sewage into surrounding rivers and parks in Australia. This can be deterimental for the citizens of the area and the environment, as well, and lead to dire living conditions. </br>
+
+Because uptime is so important in an OT environment, in order to isolate and contain our affected assets, we need to first ask and verify whether it is safe to disconnect these assets. Once it is verified that it is okay, we can then block traffic and investigate the source device. While doing so, we need to make sure to preserve the evidence for forensic investigations later. 
+</p>
 
 
 ## Modbus Lab Incident Report
@@ -78,7 +83,6 @@ Modbus is the most widely used fieldbus protocol. It allows field devices to com
 | Containment: How will we be able to limit the incident’s scope, including adverse effects on the affected data and systems? | Isolate the HMI and PLC. |
 | Eradication: What steps need to be taken to eliminate adversarial presence from the affected environment, protect the affected data, or minimize the risks to the affected parties? | Reset all passwords in the environment and verify all ACL and firewall configurations. If necessary (e.g. rootkit), rebuild with new hardware. |
 | Recovery: How can we restore normal business operations or normal activities? | Ensure safety and control systems are operating as expected. When ready, bring interdependent systems back up properly.  |
-
 
 
 
