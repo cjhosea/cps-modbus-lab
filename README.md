@@ -39,6 +39,7 @@ cps-modbus-lab/
 | **Recommended Response** | Ask the operator or engineer to verify the state of the affected device. Once deemed safe to do, block traffic from source to destination, while preserving PCAPs and investigating source device. |
 | **Escalation Path** | OT Analyst \-\> Senior OT Analyst \-\> OT Security Manager \-\> Control Systems Engineer \-\> CISO / Plant Manager |
 
+Modbus is the most widely used fieldbus protocol. It allows field devices to communicate with controllers and works via a request/reponse communication method. The function code decides what action the slave/outstation should take. Function code 05 (write single coil), in this case, writes a single bit to the output (coil). This is essentially just a singular ON or OFF switch. In an OT environment, this could represent the shutting or opening of a valve or pump. 
 
 
 ## Modbus Lab Incident Report
@@ -64,6 +65,7 @@ cps-modbus-lab/
 | Containment: How will we be able to limit the incident’s scope, including adverse effects on the affected data and systems? | Isolate the HMI and PLC. |
 | Eradication: What steps need to be taken to eliminate adversarial presence from the affected environment, protect the affected data, or minimize the risks to the affected parties? | Reset all passwords in the environment and verify all ACL and firewall configurations. If necessary (e.g. rootkit), rebuild with new hardware. |
 | Recovery: How can we restore normal business operations or normal activities? | Ensure safety and control systems are operating as expected. When ready, bring interdependent systems back up properly.  |
+
 
 
 
