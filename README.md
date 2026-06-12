@@ -25,11 +25,13 @@ cps-modbus-lab/
 ## Network Diagram
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Network%20Diagram.png)
 
+## OT Incident Triage Report
+![]([https://github.com/cjhosea/](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/OT%20Incident%20Triage%20Report.pdf))
 
 ## Modbus Lab Incident Report
-![](https://github.com/cjhosea/)
-![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/capture_led_on_pcap.png)
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/ModbusReplayAttackLog.jpg)
+![]([https://github.com/cjhosea/](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Incident%20Report.pdf))
+![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/capture_led_on_pcap.png)
 
-## OT Incident Triage Report
-![](https://github.com/cjhosea/)
+
+
