@@ -1,7 +1,7 @@
 
 # CPS Modbus Lab
 
-This lab is an example of the type of incidents that can occur in an ICS/OT environment. Critical infrastructure, such as those found in water plants and electrical grids, are vital to the safety and well-being of our modern societies. The most important things in any OT environment are availability and safety, and any disruption can cause catastrophic effects to those in or around the site, as well as the environment. 
+<p>This lab is an example of the type of incidents that can occur in an ICS/OT environment. Critical infrastructure, such as those found in water plants and electrical grids, are vital to the safety and well-being of our modern societies. The most important things in any OT environment are reliability, availability, and safety, and any disruption can cause catastrophic effects to those in or around the site, as well as the environment. </p>
 
 
 ## Repository Layout
@@ -35,6 +35,8 @@ Level 0 (Process Instrumentation) is the foundational layer where physical equip
 
 ## Network Diagram
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Network%20Diagram.png)
+
+<p>This network diagram uses two network topologies, tree and star. Star is very common and allows for devices to connect to a central switch. Tree is hierarchical and branches from a central node. My diagram starts from the top node, being the Internet. Each layer is similarly fashioned to the likes of the Purdue Model and has switches allowing for the devices in that level to communicate to one another. Between the two firewalls with different vendors (A & B) lies the DMZ. Inside the DMZ is a historian mirror with a data diode. This data diode allows for one-way data transmission from the historian in the OT environment to this mirror, which our IT network can then use for business purposes. This is an important example of how we should only allow OT to talk to IT and not the other way around. IT is where most of our compromises happen and if IT can talk OT, an attacker can make their way into our control systems. Additionally, OT should only have to tell IT the information of what is occuring at each plant and not necessarily any more. </p>
 
 ## OT Incident Triage Report
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/ModbusReplayAttackLog.jpg)
