@@ -20,6 +20,8 @@ cps-modbus-lab/
 | ------------------------ | ----- |
 | Unauthorized Message: Command Message  | T1692.001  |
 
+T1692.001 of the MITRE ATT&CK for ICS framework represents "Unauthorized Message: Command Message." This is a sub-technique of T1692 (Unauthorized Message). Using this technique, adversaries are able to send unauthorized commands to control systems to perform actions that are not in their expected functionality. This technique can be associated with the following tactics: Evasion and Impair Process Control. In this lab, the tactic demonstrated would fall under Impair Process Control, which is when the threat actor is trying to "manipulate, disable, or damage physical control processes." Two prominent examples of this technique are the 2015 Ukraine Electric Power Attacks, in which the Sandworm Team sent unauthorized commands to substation devices and left citizens of Ukraine without power for many hours, and the TRISIS attack in 2017, where the attacker group TEMP.Veles used Triton malware to send unauthorized commands to safety controllers.  
+
 ## Purdue Model
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Purdue%20Model.png)
 ## Network Diagram
