@@ -48,7 +48,7 @@ Level 0 (Process Instrumentation) is the foundational layer where physical equip
 | **Protocol** | Modbus TCP (port 502\) |
 | **Function Code** | 05 (Write Single Coil) |
 | **Suspected Behavior** | Unauthorized Message: Command Message (T1692.001)  |
-| **Potential Operational Impact** | Poses a risk to public health due to unsafe water |
+| **Potential Operational Impact** | Unauthorized commands can lead to a risk to public health and environment due to unsafe water conditions, stemming from release of raw sewage or over/under-treatment |
 | **Recommended Response** | Ask the operator or engineer to verify the state of the affected device. Once deemed safe to do, block traffic from source to destination, while preserving PCAPs and investigating source device. |
 | **Escalation Path** | OT Analyst \-\> Senior OT Analyst \-\> OT Security Manager \-\> Control Systems Engineer \-\> CISO / Plant Manager |
 
