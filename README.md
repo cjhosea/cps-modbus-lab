@@ -30,7 +30,20 @@ cps-modbus-lab/
 
 ## Modbus Lab Incident Report
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/ModbusReplayAttackLog.jpg)
-![]([https://github.com/cjhosea/](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Incident%20Report.pdf))
+**OT Incident Triage Report**
+
+| Alert | Modbus Replay Attack |
+| :---- | :---- |
+| **Source** | 192.168.86.46 |
+| **Destination** | 192.168.86.49 |
+| **Protocol** | Modbus TCP (port 502\) |
+| **Function Code** | 05 (Write Single Coil) |
+| **Suspected Behavior** | Unauthorized Message: Command Message (T1692.001)  |
+| **Potential Operational Impact** | Poses a risk to public health due to unsafe water |
+| **Recommended Response** | Ask the operator or engineer to verify the state of the affected device. Once deemed safe to do, block traffic from source to destination, while preserving PCAPs and investigating source device. |
+| **Escalation Path** | OT Analyst \-\> Senior OT Analyst \-\> OT Security Manager \-\> Control Systems Engineer \-\> CISO / Plant Manager |
+
+
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/capture_led_on_pcap.png)
 
 
