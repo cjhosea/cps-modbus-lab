@@ -68,7 +68,7 @@ Because uptime is so important in an OT environment, in order to isolate and con
 | :---- | :---- |
 | What was the nature of the incident? | Malicious commands sent to PLC. |
 | Which specific assets were at risk? | HMI (A0002), Control Server (A0007), PLC (A0003) and corresponding field devices |
-| What is the severity or significance of the incident? | Threat actor could cause physical damage to plant and/or faculty. |
+| What is the severity or significance of the incident? | Threat actor could cause physical damage to site/plant, faculty, and/or environment. |
 
 **What was the Root Cause?**
 
@@ -84,6 +84,15 @@ Because uptime is so important in an OT environment, in order to isolate and con
 | Eradication: What steps need to be taken to eliminate adversarial presence from the affected environment, protect the affected data, or minimize the risks to the affected parties? | Reset all passwords in the environment and verify all ACL and firewall configurations. If necessary (e.g. rootkit), rebuild with new hardware. |
 | Recovery: How can we restore normal business operations or normal activities? | Ensure safety and control systems are operating as expected. When ready, bring interdependent systems back up properly.  |
 
+
+<p>Incident response in OT can be more challenging because safety and availbiity takes precedence over security. To make sure we are adequately prepared for the WHEN, not IF, we can follow a framework such as SANS PICERL/DAIR or NIST SP 800-61. </br>
+Following SANS, the first thing we should do is preparation. We should set up our tools, policies, and procedures, and identify and document our IR team structure. Additionally, we should establish communication channels and assume attackers can see our messages. We can also create table-top exercises. Lastly, we should document our baseline system configurations and normal network traffic. </br>
+The next step is identification, in which we monitor for anomalies. Most cases in an OT environment will be operational issues, and although Suricata was used in this lab, firewall logs are usually effective for identifying anomalies. </br>
+The third step is containment, which is fundamentally different from IT and arguably the most difficult step for OT environments. Because we cannot simply just disconnect like IT, we need to ask ourselves three questions: 1) Is there are any risk to physical safety? 2) Is there any risk to environment safety? 3) Is there any risk to uptime? After asking these three questions, as aforementioned, we need to consult with engineers and operators before disconnecting any system and make sure to preserve evidence. </br>
+After that is eradication, where we completely remove all traces of the attacker/attack. We should always assume that something was missed, because it is better to be paranoid and over-done than inadequately eradicated and the threat still lingers. We should reset all passwords in the environment and make sure all ACL and firewall configurations are properly configured. In more critical cases, it also may be necessary to rebuild a PC, for example, with all new hardware. </br>
+Second to last is recovery, where we return to normal operations. This step is very important because the longer our recovery time is, the more money is being lost. At the same time, we cannot rush back to normal operations because safety is still highly important and we don't want to reintroduce the threat vectors. We need to ensure our control and safety systems are operating as expected, and once that is verified, bring back the interdependent systems properly. Furthermore, it is important that we document and timeline everything and communicate to stakeholders. </br>
+Lastly, one of the most important steps is "Lessons Learned". This is a step that might often be neglected or under-appreciated, but it is essential to identify what went well and what needs to be improved. We should not put blame on anyone because this might cause employees to be less honest, in fear of retaliation. The things that should be discussed are: 1) What happened and when? 2) How well did we observe every event and capture information? 3) Did we have documented procedures? And if so, were they used and did they help? We can also create an improvement plan so our next incident response goes more smoothly. Lastly, we should share our findings across our organization and industry.
+</p>
 
 
 
