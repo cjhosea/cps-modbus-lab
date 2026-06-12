@@ -32,6 +32,7 @@ Layer 3 (Site-Wide Supervisory) is for assets that need access to mulitple plant
 Layer 2 (Local Supervisory) is for process monitoring and control. Assets here include SCADA, DCS, HMI, EWS, and a lot of Windows-based systems. </br>
 Level 1 (IACS Control) is for assets that control field devices, which are PLCs and SISs. Devices in this level are different because they don't have a traditional operating system. These assets use protocols, such as Modbus and PROFINET. </br>
 Level 0 (Process Instrumentation) is the foundational layer where physical equipment interacts with the real world. This level is for assets like sensors and actuators, which are the simplest assets but also the most critical. </p>
+
 ## Network Diagram
 ![](https://github.com/cjhosea/cps-modbus-lab/blob/main/media/Modbus%20Lab%20Network%20Diagram.png)
 
